@@ -1,0 +1,324 @@
+.container{
+	will-change: transform;
+}
+body {
+	font-family: 'Cormorant Garamond', serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 600;
+	background-color: #111;
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.wrapper{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+
+
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 100;
+	width: 100%;
+}
+
+.header-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-nav-left a, .header-nav-right a{
+
+	margin-right: 80px;
+}
+.header-nav-left a:last-child, .header-nav-right a:last-child{
+	margin-right: 0;
+}
+
+.header-nav-left a:hover, .header-nav-right a:hover{
+	color: #CDAA7D;
+	text-decoration: underline;
+}
+#burgImg{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+.burger-menu{
+	position: fixed;
+	width: 475px;
+	height: 1038px;
+	background-color: #111;
+	right: -600px;
+	top: 0;
+	transition: all 1s ease-in-out;
+	padding-left: 80px;
+}
+.burger-menu.open{
+	right: 0;
+}
+.closeBurg{
+	margin-top: 40px;
+	margin-bottom: 174px;
+}
+.burger-menu p{
+	width: 315px;
+	margin-bottom: 80px;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 130%;
+}
+
+.burger-menu .contacts{
+	margin-bottom: 60px
+}
+
+
+
+
+.video{
+	position: relative;
+}
+
+.bg__video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.first-sec{
+	height: 995px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 120px;
+}
+.first-sec::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.first-sec h1{
+	font-family: 'EB Garamond', serif;
+	font-weight: bold;
+	font-size: 72px;
+	width: 520px;
+	word-wrap: break-word;
+	padding-top: 360px;
+	margin: 0 auto;
+	margin-bottom: 290px;
+}
+.main-wrap{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.conteiner{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+.mouse-down{
+	width: 190px;
+	margin: 0 auto;
+}
+.mouse-down span{
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+
+
+.about{
+	width: 856px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 95px;
+}
+.about img{
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.about p{
+	font-weight: bold;
+	font-size: 27px;
+	line-height: 130%;
+	margin-bottom: 30px;
+}
+
+.about p:last-child{
+	margin-bottom: 0;
+}
+
+
+
+
+
+.services-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(396px, 1fr));
+	grid-column-gap: 24px;
+	grid-row-gap: 60px;
+	margin-bottom: 150px;
+}
+
+.card{
+	position: relative;
+	max-width: 396px;
+}
+
+.card .border{
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	width: 396px;
+	height: 300px;
+	border: 1px solid #CDAA7D;
+	z-index: -1;
+}
+
+.card-img{
+	margin-bottom: 30px;
+
+}
+
+.card-name{
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.brands{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 168px;
+}
+
+
+
+
+
+.work{
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+
+.categories{
+	text-align: center;
+	font-size: 24px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+.categories span{
+	margin-right: 60px;
+}
+.categories span:last-child{
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+.examples{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 416px));
+	grid-column-gap: 24px;
+	grid-row-gap: 24px;
+	margin-bottom: 100px;
+}
+
+
+
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	border-top: 1px solid #8d8d8d;
+	border-bottom: 1px solid #8d8d8d;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-bottom: 30px;
+}
+
+.contacts h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contacts p{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+.operating-mode h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.operating-mode p{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.inst h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.copyright{
+	font-size: 18px;
+	text-align: center;
+	color: rgb(134, 134, 134);
+}
+.copyright p{
+	margin-bottom: 30px;
+}

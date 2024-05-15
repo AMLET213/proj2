@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=EB+Garamond:wght@400;700&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+
+	<script src="js/vue.js" defer></script>
+	<script src="js/main.js" defer></script>
+	<title>Delote-Beauty</title>
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<div class="wrapper header-wrapper">
+				<div class="header-nav">
+					<a href="#"><img src="img/header-inst.svg" alt=""></a>
+					<div class="header-nav-left">
+						<a href="#"><span>Главная</span></a>
+						<a href="#"><span>Мастера</span></a>
+						<a href="#"><span>Косметика</span></a>
+					</div>
+					<a href="#"><img src="img/header-logo.svg" alt=""></a>
+					<div class="header-nav-right">
+						<a href="#"><span>Акции</span></a>
+						<a href="#"><span>Отзывы</span></a>
+						<a href="#"><span>Контакты</span></a>
+					</div>
+					<img id="burgImg" src="img/header-burger.svg" @click="burg()" alt="">
+				</div>
+			</div>
+			<div class="burger-menu" id="burg">
+				<img id="burgImg" class="closeBurg" src="img/close.svg" @click="burg()" alt="">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci maiores quam labore praesentium possimus facilis molestiae iusto veniam aut. Reprehenderit numquam adipisci velit voluptates, soluta assumenda quis dolorem autem est.</p>
+				<div class="contacts">
+					<h3>Контакты</h3>
+					<p>+7 (812) 123-45-67</p>
+					<p>+7 (812) 123-45-67</p>
+					<p>Новоостровский проспект, дом 36 лит. С</p>
+				</div>
+				<div class="operating-mode">
+					<h3>Режим работы</h3>
+					<p>C 10:00 до 21:00 (Пн-Пт)</p>
+					<p>C 10:00 до 21:00 (Пн-Пт)</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<main>
+				<section class="first-sec">
+					<div class="video">
+						<video class="bg__video" src="1113875_marriage_laying_bridesmaid_3840x2160.mp4" autoplay muted loop></video>
+					</div>
+					<div class="wrapper main-wrap">
+						<div class="conteiner">
+							<h1>Салон красоты «Delote-Beauty» на Крестовском</h1>
+							<div class="mouse-down">
+								<img src="img/mouse.svg" alt="">
+								<span>Прокрутите вниз</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="about">
+							<img src="img/cov.svg" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae amet. Ipsum, pharetra donec
+								ornare velit. Id at quisque accumsan risus ac ipsum ut. Sit elit, facilisi proin non malesuada sociis
+								tristique. Viverra augue lorem ut quisque quam tortor, malesuada iaculis.</p>
+							<p>Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra rutrum. Fames ultrices
+								condimentum tortor nec penatibus. Velit imperdiet sapien fringilla vestibulum sit fames.</p>
+						</div>
+						<div class="services-cards">
+							<div class="card" v-for="(item) in servicesCards">
+								<div class="border"></div>
+								<img class="card-img" :src="item.img" alt="">
+								<p class="card-name">{{item.name}}</p>
+							</div>
+						</div>
+						<div class="brands">
+							<div class="brand" v-for="(item) in brands">
+								<img :src="item.img" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrapper">
+						<h2 class="work">Наши работы</h2>
+						<div class="categories">
+							<span>Показать все</span>
+							<span>Парикмахерские услуги</span>
+							<span>Маникюр</span>
+							<span>Педикюр</span>
+						</div>
+						<div class="examples">
+							<div class="example" v-for="(item) in examples">
+								<img :src="item.img" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="wrapper footer-content">
+					<a href="#"><img src="img/footer-logo.svg" alt=""></a>
+				<div class="contacts">
+					<h3>Контакты</h3>
+					<p>+7 (812) 123-45-67</p>
+					<p>+7 (812) 123-45-67</p>
+					<p>Новоостровский проспект, дом 36 лит. С</p>
+				</div>
+				<div class="operating-mode">
+					<h3>Режим работы</h3>
+					<p>C 10:00 до 21:00 (Пн-Пт)</p>
+					<p>C 10:00 до 21:00 (Пн-Пт)</p>
+				</div>
+				<div class="inst">
+					<h3>Мы в Instagram</h3>
+					<a href="#"><img src="img/footer-inst.svg" alt=""></a>
+				</div>
+				</div>
+				<div class="wrapper copyright">
+					<p>Copyright © 2017 - 2022</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>
